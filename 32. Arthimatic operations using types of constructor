@@ -1,0 +1,36 @@
+import java.io.*;
+import java.util.*;
+class arthmatic
+{
+int a,b,add,sub,mul,mod;
+float div;
+arthmatic()
+{
+a=0;
+b=1;
+}
+arthmatic(int x,int y)
+{
+a=x;
+b=y;
+}
+void display()
+{
+System.out.println("add:"+(a+b));
+System.out.println("sub:"+(a-b));
+System.out.println("mul:"+(a*b));
+System.out.println("mod:"+(a%b));
+System.out.println("div:"+(a/b));
+}
+}
+class calculation
+{
+public static void main(String args[])
+{
+arthmatic v1=new arthmatic();
+v1.display();
+arthmatic v2=new arthmatic(12,4);
+v2.display();
+}
+}
+

@@ -1,0 +1,32 @@
+import java.io.*;
+interface F
+{
+int x=10;
+void disp();
+}
+class M
+{
+void disp1()
+{
+int y=20;
+System.out.println(y);
+}
+}
+class C extends M implements F
+{
+public void disp()
+{
+System.out.println(x);
+}
+}
+class family
+{
+public static void main(String args[])
+{
+C c=new C();
+c.disp();
+c.disp1();
+}
+}
+
+                                                                                                                                        

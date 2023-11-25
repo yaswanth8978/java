@@ -1,0 +1,9 @@
+import java.io.*;
+class Addition
+{
+public static void main(String args[])
+{
+int a=2,b=10;
+System.out.println("Addition of two numbers:"+(a+b));
+}
+}

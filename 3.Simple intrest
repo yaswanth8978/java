@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+class simple_intrest
+{
+public static void main(String args[])
+{
+int p,n;
+Float r,simpleinterest;
+Scanner s=new Scanner(System.in);
+System.out.println("enter the principal amount:");
+p=s.nextInt();
+System.out.println("enter the no of yeras");
+n=s.nextInt();
+System.out.println("enetr the rate of interest:");
+r=s.nextFloat();
+simpleinterest=(p*n*r)/100;
+System.out.println("simple interest="+simpleinterest);
+}
+}

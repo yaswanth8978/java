@@ -1,0 +1,51 @@
+import java.io.*;
+import java.util.*;
+class B extends Thread
+{
+int a[]=new int[5];
+public void run()
+{
+Scanner u=new Scanner(System.in);
+System.out.println("Enter the array elements:");
+for(int i=0;i<5;i++)
+{
+a[i]=u.nextInt();
+}
+}
+}
+class A extends Thread
+{
+int age;
+public void run()
+{
+Scanner u=new Scanner(System.in);
+System.out.println("enter the age:");
+age=u.nextInt();
+if(age>18)
+System.out.println("eligiable to vote");
+else
+System.out.println("not eligiable to vote");
+}
+}
+class C extends Thread
+{
+public void run()
+{
+for(int k=0;k<=10;k++)
+{
+System.out.println("k values:"+k);
+}
+}
+}
+class program
+{
+public static void main(String args[])
+{
+A a=new A();
+a.start();
+B b=new B();
+b.start();
+C c=new C();
+c.start();
+}
+}

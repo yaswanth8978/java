@@ -1,0 +1,42 @@
+import java.io.*;
+class m1
+{
+void sum()
+{
+System.out.println("Method overloading");
+}
+
+int sum(int x)
+{
+return x*x;
+}
+int sum(int a,int b)
+{
+return a+b;
+}
+float sum(float m,float n)
+{
+return m-n;
+}
+float sum(float y)
+{
+return y*y;
+}
+float sum(int c,float d)
+{
+return c*d;
+}
+}
+class method
+{
+public static void main(String args[])
+{
+m1 c=new m1();
+c.sum();
+System.out.println(c.sum(7));
+System.out.println(c.sum(10,12));
+System.out.println(c.sum(5.4f,5.8f));
+System.out.println(c.sum(6.9f));
+System.out.println(c.sum(3,6.7f));
+}
+}

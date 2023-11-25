@@ -1,0 +1,16 @@
+import java.io.*;
+class expt
+{
+public static void main(String args[])
+{
+int x=5,y=0,z;
+try
+{
+z=x/y;
+}
+catch(ArithmeticException e)
+{
+System.out.println("Divide by zero");
+}
+}
+}

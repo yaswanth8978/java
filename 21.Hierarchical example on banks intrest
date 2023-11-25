@@ -1,0 +1,46 @@
+import java.io.*;
+import java.util.*;
+class Bank
+{
+void display()
+{
+System.out.println("Rate of Intrest of Bank");
+}
+}
+class SBI extends Bank
+{
+void display1()
+{
+System.out.println("SBI:8.4");
+}
+}
+class ICIC extends Bank
+{
+void display2()
+{
+System.out.println("ICIC:7.3");
+}
+}
+class AXIS extends Bank
+{
+void display3()
+{
+System.out.println("AXIS:9.3"
+);
+}
+}
+class intrest
+{
+public static void main(String args[])
+{
+AXIS b1=new AXIS();
+b1.display();
+b1.display3();
+ICIC b2=new ICIC();
+b2.display();
+b2.display2();
+SBI b3=new SBI();
+b3.display();
+b3.display1();
+}
+}

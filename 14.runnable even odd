@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+class A implements Runnable
+{
+int n;
+int a[]=new int[20];
+public void run()
+{
+Scanner u=new Scanner(System.in);
+System.out.println("Enter the no.of elements:");
+n=u.nextInt();
+System.out.println("enter the array list of elements:");
+for(int i=0;i<n;i++)
+{
+a[i]=u.nextInt();
+}
+for(int i=0;i<n;i++)
+{
+if(a[i]%2==0)
+System.out.println("Even numbers:"+a[i]);
+else
+System.out.println("Odd numbers:"+a[i]);
+}
+}
+}
+class runnableoddeven
+{
+public static void main(String args[])
+{
+A o=new A();
+Thread t=new Thread(o);
+t.start();
+}
+}
+

@@ -1,0 +1,45 @@
+import java.io.*;
+import java.util.*;
+class Animals
+{
+void display()
+{
+System.out.println("i am a Animal");
+}
+}
+class Carnivours extends Animals
+{
+void display1()
+{
+System.out.println("i eat only other animals");
+}
+}
+class Herbivours extends Animals
+{
+void display2()
+{
+System.out.println("i eat only plants");
+}
+}
+class Omnivours extends Animals
+{
+void display3()
+{
+System.out.println("i eat both animals and plants");
+}
+}
+class reportanimals
+{
+public static void main(String args[])
+{
+Carnivours c=new Carnivours();
+c.display();
+c.display1();
+Herbivours h=new Herbivours();
+h.display();
+h.display2();
+Omnivours o=new Omnivours();
+o.display();
+o.display3();
+}
+}

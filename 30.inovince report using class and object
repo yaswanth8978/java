@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.*;
+class invoince
+{
+int sno,rate,n,Qty;
+String dis;
+Scanner u=new Scanner(System.in);
+invoince()
+{
+System.out.println("Enter the no.of products:");
+n=u.nextInt();
+for(int i=0;i<n;i++)
+{
+System.out.println("Enter s.no:");
+sno=u.nextInt();
+System.out.println("Enter discription:");
+dis=u.next();
+System.out.println("Enter rate:");
+rate=u.nextInt();
+System.out.println("Enter Quantity:");
+Qty=u.nextInt();
+System.out.println("Enter price:"+(Qty*rate));
+}
+}
+}
+class bill
+{
+public static void main(String args[])
+{
+invoince a=new invoince();
+}
+}

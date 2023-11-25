@@ -1,0 +1,39 @@
+import java.io.*;
+class GP
+{
+int a=2,b=5;
+void disp()
+{
+System.out.println(a+b);
+}
+}
+interface M
+{
+int c=10;
+void disp1();
+}
+class P extends GP
+{
+int d=4,e=4;
+void disp2()
+{
+System.out.println(d+e);
+}
+}
+class C extends P implements M
+{
+public void disp1()
+{
+System.out.println(c);
+}
+}
+class Hybrid
+{
+public static void main(String args[])
+{
+C c1=new C();
+c1.disp();
+c1.disp1();
+c1.disp2();
+}
+}

@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+class operation
+{
+public static void main(String args[])
+{
+int a,b,add,sub,mul;
+float div,mod;
+Scanner o=new Scanner(System.in);
+System.out.print("enter the value of a");
+a=o.nextInt();
+System.out.print("enter the value of b");
+b=o.nextInt();
+add=a+b;
+sub=a-b;
+mul=a*b;
+div=a/b;
+mod=a%b;
+System.out.println("addition is"+add);
+System.out.println("subtraction is"+sub);
+System.out.println("multiplication is"+mul);
+System.out.println("division is"+div);
+System.out.println("modulus is"+mod);
+}
+}

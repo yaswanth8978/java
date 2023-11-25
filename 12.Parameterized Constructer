@@ -1,0 +1,21 @@
+import java.io.*;
+class SI
+{
+void intrest()
+{
+System.out.println("Calculate Simple Intrest");
+}
+float intrest(int p,int t,float r)
+{
+return (p*t*r)/100;
+}
+}
+class simpleintrest
+{
+public static void main(String args[])
+{
+SI c=new SI();
+c.intrest();
+System.out.println(c.intrest(10000,4,2.5f));
+}
+}

@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+class A extends Thread
+{
+int a=0,b=1,c,n,i;
+public void run()
+{
+Scanner u=new Scanner(System.in);
+System.out.println("enter the n value:");
+n=u.nextInt();
+System.out.println("Fibonacci series:");
+System.out.println(a);
+System.out.println(b);
+for(i=0;i<n;i++)
+{
+c=a+b;
+a=b;
+b=c;
+System.out.println(c);
+}
+}
+}
+class fibthread
+{
+public static void main(String args[])
+{
+A a=new A();
+a.start();
+}
+}
+
+
+

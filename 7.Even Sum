@@ -1,0 +1,14 @@
+import java.io.*;
+import java.util.*;
+class Evensum
+{
+public static void main(String args[])
+{
+int n,sum;
+Scanner s=new Scanner(System.in);
+System.out.println("enter the value of n:");
+n=s.nextInt();
+sum=n*(n+1);
+System.out.println("sum of n Even numbers:"+sum);
+}
+}

@@ -1,0 +1,26 @@
+import java.io.*;
+class circle
+{
+void area()
+{
+System.out.println("Area and Circumference of a Circle");
+}
+int area(int r)
+{
+return (22/7)*r*r;
+}
+float area(float c)
+{
+return (2*(22/7)*c);
+}
+}
+class circlearea
+{
+public static void main(String args[])
+{
+circle c=new circle();
+c.area();
+System.out.println(c.area(5));
+System.out.println(c.area(5.0f));
+}
+}

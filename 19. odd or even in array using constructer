@@ -1,0 +1,36 @@
+import java.io.*;
+import java.util.*;
+class oddandeven
+{
+int a[]=new int[10];
+int n;
+Scanner u=new Scanner(System.in);
+oddandeven()
+{
+System.out.println("Enter n value:");
+n=u.nextInt();
+System.out.println("enter the elements:");
+for(int i=0;i<n;i++)
+{
+a[i]=u.nextInt();
+}
+}
+void getdata()
+{
+for(int i=0;i<n;i++)
+{
+if(a[i]%2==0)
+System.out.println("Even:"+a[i]);
+else
+System.out.println("Odd:"+a[i]);
+}
+}
+}
+class number
+{
+public static void main(String args[])
+{
+oddandeven b1=new oddandeven();
+b1.getdata();
+}
+}

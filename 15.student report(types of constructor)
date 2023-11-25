@@ -1,0 +1,54 @@
+import java.io.*;
+import java.util.*;
+class student
+{
+int s1,s2,s3,s4,s5,sum;
+float avg;
+student()
+{
+s1=0;
+s2=0;
+s3=0;
+s4=0;
+s5=0;
+System.out.println("sum:"+(s1+s2+s3+s4+s5));
+System.out.println("avg:"+((s1+s2+s3+s4+s5)/5));
+}
+student(int x,int y,int z,int a,int b)
+{
+s1=x;
+s2=y;
+s3=z;
+s4=a;
+s5=b;
+sum=(s1+s2+s3+s4+s5);
+avg=(sum/5);
+}
+void grade()
+{
+if(avg>=90)
+System.out.println("s grade");
+else if(avg<90 && avg>=70)
+System.out.println("a grade");
+else if(avg<70 && avg>=60)
+System.out.println("b grade");
+else
+System.out.println("f grade");
+}
+void display()
+{
+System.out.println("sum:"+sum);
+System.out.println("avg:"+avg);
+}
+}
+class reports
+{
+public static void main(String args[])
+{
+student c1=new student();
+c1.display();
+student c2=new student(57,78,98,87,79);
+c2.display();
+c2.grade();
+}
+}

@@ -1,0 +1,36 @@
+import java.io.*;
+import java.util.*;
+class Bonus
+{
+int sal;
+float b;
+Scanner u=new Scanner(System.in);
+Bonus()
+{
+sal=0;
+b=0.0f;
+System.out.println(sal);
+System.out.println(b);
+}
+Bonus(int x,float y)
+{
+sal=x;
+b=y;
+}
+void display()
+{
+System.out.println("Salary:"+sal);
+System.out.println("Bonus:"+b);
+}
+}
+class Data
+{
+public static void main(String args[])
+{
+Bonus b1=new Bonus();
+b1.display();
+Bonus b2=new Bonus(10,23.45f);
+b2.display();
+}
+}
+
